@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mu0s77bo-ppti9b77n">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Cifrado y comunicaciones seguras | Guía de software libre en educación</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Guía dirigida al profesorado sobre el software libre en la enseñanza, desde sus fundamentos hasta su aplicación en el centro y en el hogar. Trata las licencias para compartir materiales, la privacidad y la seguridad digital, la inteligencia artificial y la protección de los datos del alumnado. Incluye una selección de programas libres probados, indicaciones para instalar GNU/Linux en ordenadores antiguos, actividades para el alumnado y materiales para informar a las familias.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../search_index.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<script src="../libs/exe_tooltips/exe_tooltips.js"> </script>
+<script src="../libs/exe_tooltips/jquery.qtip.min.js"> </script>
+<script src="../libs/exe_tooltips/imagesloaded.pkg.min.js"> </script>
+<link rel="stylesheet" href="../libs/exe_tooltips/jquery.qtip.min.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mu0s77bo-ppti9b77n" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Guía de software libre en educación</a>
+</li>
+<li> <a href="../html/fundamentos-del-software-libre.html" class="daddy">Fundamentos del software libre</a>
+<ul class="other-section">
+<li> <a href="../html/concepto-de-software-libre.html" class="no-ch">Concepto de software libre</a>
+</li>
+<li> <a href="../html/la-filosofia-de-lo-libre.html" class="no-ch">La filosofía de lo libre</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/compartir-y-crear-cultura-libre.html" class="daddy">Compartir y crear cultura libre</a>
+<ul class="other-section">
+<li> <a href="../html/licencias-para-compartir.html" class="no-ch">Licencias para compartir</a>
+</li>
+<li> <a href="../html/actividades-sobre-licencias-y-autoria.html" class="no-ch">Actividades sobre licencias y autoría</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/privacidad-y-seguridad-digital.html" class="daddy">Privacidad y seguridad digital</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/cifrado-y-comunicaciones-seguras.html" class="active no-ch">Cifrado y comunicaciones seguras</a>
+</li>
+<li> <a href="../html/cifrado-de-discos-y-memorias-usb.html" class="no-ch">Cifrado de discos y memorias USB</a>
+</li>
+<li> <a href="../html/contrasenas-y-copias-de-seguridad.html" class="no-ch">Contraseñas y copias de seguridad</a>
+</li>
+<li> <a href="../html/herramientas-para-la-privacidad-y-la-seguridad.html" class="no-ch">Herramientas para la privacidad y la seguridad</a>
+</li>
+<li> <a href="../html/actividades-de-cifrado.html" class="no-ch">Actividades de cifrado</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/inteligencia-artificial-y-software-libre.html" class="daddy">Inteligencia artificial y software libre</a>
+<ul class="other-section">
+<li> <a href="../html/crear-aplicaciones-propias-con-ia.html" class="no-ch">Crear aplicaciones propias con IA</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/software-libre-en-la-escuela.html" class="daddy">Software libre en la escuela</a>
+<ul class="other-section">
+<li> <a href="../html/gnulinux-y-educacion.html" class="no-ch">GNU/Linux y educación</a>
+</li>
+<li> <a href="../html/distribuciones-y-escritorios-para-el-centro.html" class="no-ch">Distribuciones y escritorios para el centro</a>
+</li>
+<li> <a href="../html/dar-una-segunda-vida-a-los-ordenadores.html" class="no-ch">Dar una segunda vida a los ordenadores</a>
+</li>
+<li> <a href="../html/instalar-gnulinux-desde-una-memoria-usb.html" class="no-ch">Instalar GNU/Linux desde una memoria USB</a>
+</li>
+<li> <a href="../html/datos-y-servicios-digitales-del-centro.html" class="no-ch">Datos y servicios digitales del centro</a>
+</li>
+<li> <a href="../html/accesibilidad-y-atencion-a-la-diversidad.html" class="no-ch">Accesibilidad y atención a la diversidad</a>
+</li>
+<li> <a href="../html/actividades-para-conocer-y-elegir-software-libre.html" class="no-ch">Actividades para conocer y elegir software libre</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/software-libre-en-el-hogar.html" class="daddy">Software libre en el hogar</a>
+<ul class="other-section">
+<li> <a href="../html/recomendaciones-para-el-hogar.html" class="no-ch">Recomendaciones para el hogar</a>
+</li>
+<li> <a href="../html/reunion-informativa-para-familias.html" class="no-ch">Reunión informativa para familias</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/herramientas-libres.html" class="daddy">Herramientas libres</a>
+<ul class="other-section">
+<li> <a href="../html/creacion-de-contenidos.html" class="no-ch">Creación de contenidos</a>
+</li>
+<li> <a href="../html/suites-y-plataformas.html" class="no-ch">Suites y plataformas</a>
+</li>
+<li> <a href="../html/colaboracion-y-gestion-del-aula.html" class="no-ch">Colaboración y gestión del aula</a>
+</li>
+<li> <a href="../html/aplicaciones-para-materias.html" class="no-ch">Aplicaciones para materias</a>
+</li>
+<li> <a href="../html/herramientas-para-android.html" class="no-ch">Herramientas para Android</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/referencias-y-descarga.html" class="no-ch">Referencias y descarga</a>
+</li>
+</ul>
+</nav><main id="page-mu0s77bo-ppti9b77n" class="page"> <div id="exe-client-search" data-block-order-string="Caja %e" data-no-results-string="Sin resultados.">
+</div>
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">9</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">33</strong></span></p>
+
+<div class="package-header"><p class="package-title">Guía de software libre en educación</p>
+<p class="package-subtitle">Conceptos, criterios y programas para el profesorado</p></div>
+<div class="page-header"><h1 class="page-title">Cifrado y comunicaciones seguras</h1></div>
+</header><div id="page-content-page-mu0s77bo-ppti9b77n" class="page-content">
+<article id="block-mu0s77bp-r7l5x50ei" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/ask.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">¿Qué es el cifrado?</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mu0s77bp-0x8q7n3zm" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mu0s77bp-0x8q7n3zm&quot;}">
+<p>Esta página explica en qué consiste el cifrado y cómo protege la información que viaja por Internet, ya sea al visitar una página web o al enviar un mensaje. La siguiente, «<a href="../html/cifrado-de-discos-y-memorias-usb.html">Cifrado de discos y memorias USB</a>», explica cómo proteger la que se guarda en el ordenador.</p>
+<p>Cifrar un texto, una imagen o cualquier otro archivo consiste en modificarlo de forma que quede irreconocible para cualquiera excepto para quien lo envía y quien lo recibe. Para cifrarlo y descifrarlo se usa una <strong>clave</strong>.</p>
+<p>En los sistemas de <strong>clave simétrica</strong> se usa la misma clave para cifrar y para descifrar. Son muy rápidos y son los que cifran hoy la mayor parte de la información, como el algoritmo <a href="https://es.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">AES</a>. Su problema es cómo hacer llegar la clave a quien recibe el mensaje sin que nadie más la vea.</p>
+<p>Los sistemas de <strong>clave asimétrica</strong> resuelven ese problema. Se usa una clave pública para cifrar el mensaje, que puede estar a disposición de todo el mundo, y otra clave distinta, la privada, para descifrarlo. La clave privada es secreta y solo la tiene quien recibe el mensaje. Es como una persona que tiene cajas con dos cerraduras, cada una de las cuales solo sirve para cerrar o para abrir la caja. Para que le dejen mensajes, pone la caja en un lugar bien visible con la llave de cerrar puesta. Cuando alguien introduce un mensaje y la cierra con esa llave, ya nadie la podrá abrir, excepto su dueña, que tiene la llave necesaria para abrirla.</p>
+<p>Los sistemas asimétricos son mucho más lentos, por eso <strong>en la práctica se combinan los dos</strong>: el asimétrico sirve para acordar de forma segura una clave, y el simétrico, para cifrar con ella los datos. La seguridad del más conocido, <a href="https://es.wikipedia.org/wiki/RSA" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">RSA</a>, se basa en la dificultad de descomponer en factores primos números enteros enormes, de más de 600 cifras. Hoy también se usan otros basados en curvas elípticas.</p>
+<p>Un ordenador cuántico lo bastante potente podría romper estos sistemas asimétricos. Aunque todavía no existe, alguien podría guardar hoy comunicaciones cifradas para descifrarlas en el futuro. Por eso ya se usa el <a href="https://es.wikipedia.org/wiki/Criptograf%C3%ADa_postcu%C3%A1ntica" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">cifrado poscuántico</a>: desde 2024, navegadores como Firefox y Chrome combinan el cifrado de siempre con un algoritmo resistente a los ordenadores cuánticos en la mayoría de las conexiones seguras. El cifrado simétrico, en cambio, no se considera en riesgo si la clave es lo bastante larga.</p>
+<p>Parece que Julio César fue uno de los primeros en usar el cifrado para proteger los mensajes importantes. Desplazaba el alfabeto 3 letras, de forma que a la A le correspondía la D, a la B la E, y así sucesivamente. El siguiente dibujo, hecho con el alfabeto inglés, ayuda a entenderlo.</p>
+<div class="exe-figure exe-image position-center license-pd" style="width: 600px;"><a href="../content/resources/Caesar3.svg.png" rel="lightbox" title=""><img src="../content/resources/Caesar3.svg.png" alt="Dos alfabetos en paralelo, desplazados tres posiciones: la A se corresponde con la D, la B con la E y así sucesivamente" width="600" height="253" /></a>
+<div class="figcaption"><a href="https://commons.wikimedia.org/wiki/File:Caesar3.svg" target="_blank" class="author" rel="noopener">Cepheus</a>. <span class="title"><em>Cifrado de César</em></span> <span class="license"><span class="sep">(</span><span>Dominio público</span><span class="sep">)</span></span></div>
+</div>
+<p>Por ejemplo, con el alfabeto español, de 27 letras, «Software libre» se escribiría «Vriwzduh ñleuh». Como sistema de cifrado es totalmente inseguro y no pasa de ser un juego. Existen otros semejantes, como el cifrado de Vigenère, que se basa en el mismo principio, pero no aplica el mismo desplazamiento a todas las letras: se elige una clave que indica qué desplazamiento corresponde a cada letra del mensaje. En «<a href="../html/actividades-de-cifrado.html">Actividades de cifrado</a>» se proponen formas de usarlos en el aula.</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Para saber más" /></div><div class="feedback js-feedback js-hidden"><ul>
+<li>Artículos:
+<ul>
+<li><a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank" rel="noopener">Cifrado César</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Cifrado_de_Vigen%C3%A8re" target="_blank" rel="noopener">Cifrado de Vigenère</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Criptografía asimétrica</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Criptograf%C3%ADa_postcu%C3%A1ntica" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Criptografía postcuántica</a></li>
+</ul>
+</li>
+<li>Vídeos de la Universidad Politécnica de Madrid:
+<ul>
+<li><a href="https://youtu.be/CMe0COxZxb0" target="_blank" title="Enlace a vídeo. Abre en ventana nueva." rel="noopener">El cifrado RSA</a></li>
+<li><a href="https://youtu.be/tzj1RoqRnv0" target="_blank" title="Enlace a vídeo. Abre en ventana nueva." rel="noopener">El cifrado AES</a></li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article><article id="block-mu0s77bp-1qepcqvje" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/discuss.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Comunicaciones seguras</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mu0s77bp-vwy9qvyp8" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mu0s77bp-vwy9qvyp8&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>¿Cómo se protegen las comunicaciones? A continuación se explican los mecanismos que se usan en la web y en los programas de mensajería instantánea.</p>
+<div class="exe-fx exe-tabs">
+<h2>Páginas web</h2>
+<p>Las páginas web que usan el protocolo HTTPS (la «s» final viene de <em>secure</em>, «seguro») cifran la información que intercambian con el navegador mediante <a href="#tfeafb12d-1c8f-4aed-a0cf-905136cc4062" id="linkfeafb12d-1c8f-4aed-a0cf-905136cc4062" title="TLS | Protocolo que cifra la conexión entre el navegador y la página web. Es lo que convierte HTTP en HTTPS." class="exe-tooltip definition-tt titled-tt rounded-tt shadowed-tt">TLS</a>, que combina los dos tipos de cifrado. Aunque alguien intercepte la comunicación, no podrá ver su contenido. Una vez en el navegador, la información se descifra sin que la persona usuaria llegue siquiera a notarlo. Un sistema parecido protege las tarjetas bancarias, el DNI electrónico y todo tipo de transacciones económicas.</p>
+<div id="tfeafb12d-1c8f-4aed-a0cf-905136cc4062" class="exe-tooltip-text">
+<p>Protocolo que cifra la conexión entre el navegador y la página web. Es lo que convierte HTTP en HTTPS.</p>
+</div>
+<p>Hoy la gran mayoría de las páginas usan HTTPS, y los navegadores avisan cuando no es así. Siempre que se vayan a enviar datos a una página hay que exigirlo y no usarla si no lo tiene, porque los datos enviados (contraseñas, nombres de usuario y otros datos sensibles) podrían ser interceptados. Es especialmente importante al iniciar sesión en cualquier servicio, en la banca en línea, en las compras por Internet y en los trámites con la administración.</p>
+<p>Eso sí, <strong>el candado solo indica que la conexión está cifrada, no que la página sea de fiar</strong>. Las páginas fraudulentas que imitan a un banco o a una tienda también pueden usar HTTPS, así que conviene comprobar siempre la dirección.</p>
+<h2>Programas de mensajería instantánea</h2>
+<p>El <a href="https://es.wikipedia.org/wiki/Cifrado_de_extremo_a_extremo" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">cifrado de extremo a extremo</a> es el que protege de verdad una conversación: el mensaje se cifra en el móvil de quien lo envía y solo se descifra en el de quien lo recibe, de modo que ni siquiera la empresa que gestiona el servicio puede leerlo. Hoy lo usan por defecto la mayoría de los programas de mensajería, pero no todos.</p>
+<table class="exe-table" style="width: 100%;"><caption>Programas de mensajería y cifrado, septiembre de 2026. Elaboración propia. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" rel="license noopener" target="_blank" title="Creative Commons BY-SA 4.0">CC BY-SA 4.0</a>.</caption>
+<thead>
+<tr>
+<th scope="col">Programa</th>
+<th scope="col">Libre</th>
+<th scope="col">Cifrado de extremo a extremo por defecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><a href="https://signal.org/es/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Signal</a></th>
+<td>Sí</td>
+<td>Siempre</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://element.io/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Element</a></th>
+<td>Sí</td>
+<td>En chats privados</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://telegram.org/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Telegram</a></th>
+<td>En parte</td>
+<td>Solo chats secretos</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://www.whatsapp.com/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">WhatsApp</a> (Meta)</th>
+<td>No</td>
+<td>Sí</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://www.messenger.com/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Messenger</a> (Meta)</th>
+<td>No</td>
+<td>En chats personales</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://www.viber.com/es/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Viber</a> (Rakuten)</th>
+<td>No</td>
+<td>Sí</td>
+</tr>
+</tbody>
+</table>
+<p>Pero no toda la seguridad de un programa está en el cifrado. También cuenta lo que hace la empresa con los <strong>metadatos</strong>: con quién se habla, cuándo, con qué frecuencia y desde dónde. Aunque no pueda leer los mensajes, con esos datos puede conocer la red de relaciones de cada persona. Por eso <strong>las opciones más recomendables son libres</strong>: Signal, que cifra todo por defecto y apenas guarda datos de sus usuarios, y Element, que funciona sobre la <a href="#t98a692fa-21dc-48db-8864-aaeafc18771f" id="link98a692fa-21dc-48db-8864-aaeafc18771f" title="Red federada | Red formada por muchos servidores independientes, de distintas organizaciones, que se comunican entre sí, como ocurre con el correo electrónico. Quien usa uno de ellos puede hablar con quien usa cualquier otro." class="exe-tooltip definition-tt titled-tt rounded-tt shadowed-tt">red federada</a> <a href="https://es.wikipedia.org/wiki/Matrix_(protocolo)" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Matrix</a> y permite que un centro educativo o una organización tenga su propio servidor. Telegram, que a veces se presenta como alternativa privada y solo tiene libres sus aplicaciones, no su servidor, no cifra por defecto las conversaciones normales ni los grupos, y desde 2024 entrega la dirección IP y el número de teléfono de sus usuarios a las autoridades que lo soliciten con una orden judicial.</p>
+<div id="t98a692fa-21dc-48db-8864-aaeafc18771f" class="exe-tooltip-text">
+<p>Red formada por muchos servidores independientes, de distintas organizaciones, que se comunican entre sí, como ocurre con el correo electrónico. Quien usa uno de ellos puede hablar con quien usa cualquier otro.</p>
+</div>
+<p>El cifrado de extremo a extremo tampoco está garantizado para siempre. La Unión Europea debate desde 2022 un reglamento para detectar abusos sexuales a menores que podría obligar a revisar los mensajes privados, también los cifrados, y que organizaciones de defensa de la privacidad y expertos en seguridad llaman «Chat Control». Mientras no hay acuerdo, se ha <a href="https://www.elespanol.com/invertia/disruptores/politica-digital/europa/20260710/europa-prorroga-escaneo-voluntario-material-abuso-sexual-infantil-online-debate-ley-definitiva/1003744316798_0.html" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">prorrogado el permiso</a> para que las plataformas lo hagan de forma voluntaria.</p>
+</div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Para saber más" data-text-a="Para saber más" data-text-b="Para saber más"></div><div class="feedback js-feedback js-hidden" style="display: none;"><ul>
+<li><a href="https://www.privacyguides.org/es/real-time-communication/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Mensajería segura: recomendaciones y criterios</a>, Privacy Guides</li>
+<li><a href="https://es.wikipedia.org/wiki/Seguridad_de_la_capa_de_transporte" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Seguridad de la capa de transporte (TLS)</a>, Wikipedia</li>
+<li><a href="https://es.wikipedia.org/wiki/Cifrado_de_extremo_a_extremo" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Cifrado de extremo a extremo</a>, Wikipedia</li>
+</ul></div></div>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/privacidad-y-seguridad-digital.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/cifrado-de-discos-y-memorias-usb.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

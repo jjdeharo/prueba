@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mu0s77bo-pcgny4xfm">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Instalar GNU/Linux desde una memoria USB | Guía de software libre en educación</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Guía dirigida al profesorado sobre el software libre en la enseñanza, desde sus fundamentos hasta su aplicación en el centro y en el hogar. Trata las licencias para compartir materiales, la privacidad y la seguridad digital, la inteligencia artificial y la protección de los datos del alumnado. Incluye una selección de programas libres probados, indicaciones para instalar GNU/Linux en ordenadores antiguos, actividades para el alumnado y materiales para informar a las familias.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../search_index.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mu0s77bo-pcgny4xfm" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Guía de software libre en educación</a>
+</li>
+<li> <a href="../html/fundamentos-del-software-libre.html" class="daddy">Fundamentos del software libre</a>
+<ul class="other-section">
+<li> <a href="../html/concepto-de-software-libre.html" class="no-ch">Concepto de software libre</a>
+</li>
+<li> <a href="../html/la-filosofia-de-lo-libre.html" class="no-ch">La filosofía de lo libre</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/compartir-y-crear-cultura-libre.html" class="daddy">Compartir y crear cultura libre</a>
+<ul class="other-section">
+<li> <a href="../html/licencias-para-compartir.html" class="no-ch">Licencias para compartir</a>
+</li>
+<li> <a href="../html/actividades-sobre-licencias-y-autoria.html" class="no-ch">Actividades sobre licencias y autoría</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/privacidad-y-seguridad-digital.html" class="daddy">Privacidad y seguridad digital</a>
+<ul class="other-section">
+<li> <a href="../html/cifrado-y-comunicaciones-seguras.html" class="no-ch">Cifrado y comunicaciones seguras</a>
+</li>
+<li> <a href="../html/cifrado-de-discos-y-memorias-usb.html" class="no-ch">Cifrado de discos y memorias USB</a>
+</li>
+<li> <a href="../html/contrasenas-y-copias-de-seguridad.html" class="no-ch">Contraseñas y copias de seguridad</a>
+</li>
+<li> <a href="../html/herramientas-para-la-privacidad-y-la-seguridad.html" class="no-ch">Herramientas para la privacidad y la seguridad</a>
+</li>
+<li> <a href="../html/actividades-de-cifrado.html" class="no-ch">Actividades de cifrado</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/inteligencia-artificial-y-software-libre.html" class="daddy">Inteligencia artificial y software libre</a>
+<ul class="other-section">
+<li> <a href="../html/crear-aplicaciones-propias-con-ia.html" class="no-ch">Crear aplicaciones propias con IA</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/software-libre-en-la-escuela.html" class="daddy">Software libre en la escuela</a>
+<ul class="other-section">
+<li> <a href="../html/gnulinux-y-educacion.html" class="no-ch">GNU/Linux y educación</a>
+</li>
+<li> <a href="../html/distribuciones-y-escritorios-para-el-centro.html" class="no-ch">Distribuciones y escritorios para el centro</a>
+</li>
+<li> <a href="../html/dar-una-segunda-vida-a-los-ordenadores.html" class="no-ch">Dar una segunda vida a los ordenadores</a>
+</li>
+<li class="active"> <a href="../html/instalar-gnulinux-desde-una-memoria-usb.html" class="active no-ch">Instalar GNU/Linux desde una memoria USB</a>
+</li>
+<li> <a href="../html/datos-y-servicios-digitales-del-centro.html" class="no-ch">Datos y servicios digitales del centro</a>
+</li>
+<li> <a href="../html/accesibilidad-y-atencion-a-la-diversidad.html" class="no-ch">Accesibilidad y atención a la diversidad</a>
+</li>
+<li> <a href="../html/actividades-para-conocer-y-elegir-software-libre.html" class="no-ch">Actividades para conocer y elegir software libre</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/software-libre-en-el-hogar.html" class="daddy">Software libre en el hogar</a>
+<ul class="other-section">
+<li> <a href="../html/recomendaciones-para-el-hogar.html" class="no-ch">Recomendaciones para el hogar</a>
+</li>
+<li> <a href="../html/reunion-informativa-para-familias.html" class="no-ch">Reunión informativa para familias</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/herramientas-libres.html" class="daddy">Herramientas libres</a>
+<ul class="other-section">
+<li> <a href="../html/creacion-de-contenidos.html" class="no-ch">Creación de contenidos</a>
+</li>
+<li> <a href="../html/suites-y-plataformas.html" class="no-ch">Suites y plataformas</a>
+</li>
+<li> <a href="../html/colaboracion-y-gestion-del-aula.html" class="no-ch">Colaboración y gestión del aula</a>
+</li>
+<li> <a href="../html/aplicaciones-para-materias.html" class="no-ch">Aplicaciones para materias</a>
+</li>
+<li> <a href="../html/herramientas-para-android.html" class="no-ch">Herramientas para Android</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/referencias-y-descarga.html" class="no-ch">Referencias y descarga</a>
+</li>
+</ul>
+</nav><main id="page-mu0s77bo-pcgny4xfm" class="page"> <div id="exe-client-search" data-block-order-string="Caja %e" data-no-results-string="Sin resultados.">
+</div>
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">20</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">33</strong></span></p>
+
+<div class="package-header"><p class="package-title">Guía de software libre en educación</p>
+<p class="package-subtitle">Conceptos, criterios y programas para el profesorado</p></div>
+<div class="page-header"><h1 class="page-title">Instalar GNU/Linux desde una memoria USB</h1></div>
+</header><div id="page-content-page-mu0s77bo-pcgny4xfm" class="page-content">
+<article id="block-mu0s77br-eweqrf2zf" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/activity.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Una actividad para el aula</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mu0s77br-06eizv8oq" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mu0s77br-06eizv8oq&quot;}">
+<p>En muchas familias es el alumnado quien enseña a las personas adultas a usar la tecnología. La escuela es, por lo tanto, un buen lugar para enseñar la instalación de nuevos sistemas operativos y la búsqueda de software libre, así como para concienciar de la importancia de la privacidad y el uso del software libre.</p>
+<p>A continuación se explica <strong>cómo instalar un sistema operativo mediante una memoria USB de arranque.</strong> Se incluyen dos posibilidades, la primera utilizando un ordenador con Windows y la segunda con Linux.</p>
+<p><em>Destinatarios:</em> ESO y Bachillerato. <em>Duración:</em> una o dos sesiones. <em>Agrupamiento:</em> por parejas. <em>Evaluación:</em> comprobación de que el ordenador arranca con el sistema instalado y lista de cotejo de los pasos seguidos.</p>
+<p>La distribución que conviene grabar en la memoria depende del ordenador donde vaya a instalarse. En «<a href="../html/distribuciones-y-escritorios-para-el-centro.html">Distribuciones y escritorios para el centro</a>» aparecen ordenadas de mayor a menor potencia requerida, y en «<a href="../html/dar-una-segunda-vida-a-los-ordenadores.html">Dar una segunda vida a los ordenadores</a>» se explica qué conviene comprobar en los equipos antiguos antes de instalar.</p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+</article><article id="block-mu0s77br-3kamu68mk" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/start.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Crear un USB de arranque</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mu0s77br-wdqahnmmy" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mu0s77br-wdqahnmmy&quot;}">
+<p>En este primer paso se prepara la memoria USB de arranque. Hay dos formas de hacerlo, desde Windows o desde Linux, y las dos se explican a continuación.</p>
+<div class="exe-fx exe-tabs">
+<h2>Desde Windows</h2>
+<p>Para preparar la memoria desde un sistema con Windows hace falta lo siguiente:</p>
+<ul>
+<li>Un ordenador con Windows, desde el que se graba la memoria USB con el nuevo sistema operativo.</li>
+<li>Un ordenador antiguo sobre el que instalar ese sistema.</li>
+<li>Una memoria USB de 8 GB o más. Las imágenes de las distribuciones más completas superan hoy los 6 GB, así que las memorias de 4 GB se han quedado cortas.</li>
+<li>El programa <a href="https://rufus.ie/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Rufus</a>, que es software libre y tiene una versión portable, sin instalación.</li>
+<li>La imagen ISO del sistema operativo, que se descarga de su página web.</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-gnu-gpl" style="text-align: center;"><a href="../content/resources/rufus_en_2x.png" rel="lightbox" title=""><img src="../content/resources/rufus_en_2x.png" alt="Ventana principal de Rufus, con la unidad USB seleccionada, la imagen ISO elegida y las opciones de formato" style="display: block; margin-left: auto; margin-right: auto;" width="300" height="402" /></a>
+<figcaption class="figcaption"><a href="https://rufus.ie/es/" target="_blank" class="author" rel="noopener">Pete Batard</a>. <span class="title"><em>Ventana de Rufus</em></span> <span class="license"><span class="sep">(</span><a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license nofollow noopener" target="_blank" title="Licencia Pública General de GNU, versión 3">GPL 3.0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Basta con elegir la unidad USB donde se va a grabar, seleccionar la imagen ISO e iniciar el proceso. El resto de las opciones pueden dejarse como las propone el programa. Conviene asegurarse de que la unidad elegida es la memoria USB, porque su contenido se borra por completo.</p>
+<p>En el vídeo <a href="https://www.youtube.com/watch?v=qedjN2AA3gU&feature=youtu.be" target="_blank" title="Enlace a vídeo. Abre en ventana nueva." rel="noopener">Cómo crear un USB booteable</a> se explica el proceso en detalle.</p>
+<h2>Desde Linux</h2>
+<p>En Linux puede utilizarse un programa que viene incluido en muchas distribuciones y que reúne las utilidades para las unidades de almacenamiento. Aparece con el nombre <strong>Discos</strong> (<strong>Disks</strong> en inglés, o <strong>gnome-disks</strong> desde un terminal). Si no está instalado, se añade desde el gestor de programas de la distribución o, en las basadas en Debian, con la orden <strong>sudo apt install gnome-disk-utility</strong> en un terminal. Permite grabar cualquier imagen ISO en una memoria USB.</p>
+<p>Requisitos:</p>
+<ul>
+<li>Un ordenador con Linux, desde el que se graba la memoria USB con el nuevo sistema operativo</li>
+<li>Un ordenador antiguo sobre el que instalar ese sistema</li>
+<li>Una memoria USB de 8 GB o más</li>
+<li>El programa Discos (gnome-disks)</li>
+<li>La imagen ISO, que se descarga de la página web del sistema operativo</li>
+</ul>
+<p>Para grabar la memoria:</p>
+<ul>
+<li>Se abre el programa y se selecciona, en la lista de dispositivos, la unidad donde se va a escribir la imagen</li>
+<li>En el menú del programa se elige la opción para restaurar una imagen de disco</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 650px;"><a href="../content/resources/discos-restaurar-menu.jpg" rel="lightbox" title=""><img src="../content/resources/discos-restaurar-menu.jpg" alt="El programa Discos con una memoria USB de 16 GB seleccionada y su menú abierto en la opción «Restaurar imagen de disco…»" width="650" height="433" /></a>
+<figcaption class="figcaption">Elaboración propia. Opción de Discos para copiar la imagen ISO en la memoria USB. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" rel="license noopener" target="_blank" title="Creative Commons BY-SA 4.0">CC BY-SA 4.0</a>.</figcaption>
+</figure>
+<p>Después se indica dónde está la imagen ISO en el ordenador.</p>
+<ul>
+<li>Por último se inicia la copia. Al terminar, el ordenador ya puede arrancarse con esa memoria USB.<br /><br /></li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 650px;"><a href="../content/resources/discos-restaurar-iso.jpg" rel="lightbox" title=""><img src="../content/resources/discos-restaurar-iso.jpg" alt="Ventana «Restaurar imagen de disco» de Discos con la imagen ISO de Debian Edu elegida, su tamaño y la memoria USB como destino, con el botón para iniciar la restauración" width="650" height="433" /></a>
+<figcaption class="figcaption">Elaboración propia. Restaurar una imagen ISO con Discos. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" rel="license noopener" target="_blank" title="Creative Commons BY-SA 4.0">CC BY-SA 4.0</a>.</figcaption>
+</figure>
+</div>
+<p>Los dos procedimientos anteriores dejan la memoria USB preparada con un solo sistema operativo, y hay que volver a grabarla entera para cambiarlo. Existe otra forma de trabajar que resulta más cómoda en un centro, donde se suelen probar varias distribuciones. El programa <a href="https://www.ventoy.net/" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Ventoy</a>, publicado con licencia GPL, prepara la memoria una sola vez; después basta con copiar en ella los archivos ISO que se quieran, como si fueran documentos. Al arrancar el ordenador aparece un menú con todos los sistemas copiados y se elige uno.</p>
+</div>
+</div>
+</article><article id="block-mu0s77br-bkzl2czqa" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/technology.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Arrancar e instalar desde el USB</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mu0s77br-yv81xzi00" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mu0s77br-yv81xzi00&quot;}">
+<p>Una vez preparada la memoria USB con el sistema operativo, queda arrancar el ordenador donde va a instalarse. Hay que conseguir que se inicie desde la memoria USB y no desde el disco duro, como es habitual.</p>
+<p>La forma de hacerlo depende de cada ordenador. Muchos indican durante el arranque, y durante unos segundos, la tecla que hay que pulsar para elegir desde dónde se inicia el equipo, o la que da acceso a la configuración de la BIOS para cambiar el orden de arranque. Suelen ser teclas de función, aunque cambian según el fabricante. En el artículo <a href="https://www.xataka.com/basics/como-arrancar-tu-ordenador-desde-un-cd-o-usb" target="_blank" title="Enlace a sitio web. Abre en ventana nueva." rel="noopener">Cómo arrancar tu ordenador desde un CD o USB</a> se recogen las más habituales y las dos maneras de hacerlo.</p>
+<p>En los ordenadores relativamente recientes puede aparecer otra dificultad. Llevan activado el arranque seguro, una comprobación que impide iniciar el equipo con un sistema que no esté firmado digitalmente. Las distribuciones más extendidas sí lo están y arrancan sin problemas, pero algunas de las más ligeras no, y en ese caso hay que desactivar esa opción en la configuración de la BIOS.</p>
+<p>Una vez arrancado el ordenador con el nuevo sistema, solo hay que seguir las instrucciones que aparecen en pantalla. La instalación no suele dar problemas.</p>
+<p>Conviene aprovechar la instalación para cifrar el disco duro, una opción que ofrecen casi todas las distribuciones durante el proceso. Es la única forma de que los datos sigan siendo inaccesibles si el ordenador se pierde o lo roban, y en «<a href="../html/cifrado-de-discos-y-memorias-usb.html">Cifrado de discos y memorias USB</a>» se explica con más detalle.</p>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/dar-una-segunda-vida-a-los-ordenadores.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/datos-y-servicios-digitales-del-centro.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

@@ -24,6 +24,24 @@
   font-size: 1.2em;
 }
 
+.exe-content .exe-material-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: currentColor;
+  -webkit-mask-image: var(--exe-material-icon-url);
+  mask-image: var(--exe-material-icon-url);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  /* 20px live area on a 24px grid: scale 24/20 so the ink matches the Style icons.
+     Kept in step with the editor rule in assets/styles/layout/_execontent.scss. */
+  transform: scale(1.2);
+}
+
 .exe-content a{
   color: #5a7f0c;
 }
@@ -55,6 +73,17 @@
     text-decoration: underline
 }
 
+/* Underlined links */
+.box-content a {
+    text-decoration: underline;
+}
+.box-content a:hover {
+    text-decoration: none;
+}
+.box-content a:focus {
+    text-decoration: underline;
+}
+
 @media print {
     .external-iframe-src {
         display: block !important;
@@ -81,6 +110,10 @@
     margin: 2em 1em;
     overflow: auto;
     padding: 20px
+}
+
+.highlighted-code {
+    margin: 2em 1em;
 }
 
 .exe-dl {
@@ -276,6 +309,8 @@
 pre.mermaid {
     margin: 1.5em 0;
     text-align: center;
+    width: 100%;
+    min-width: 200px;
 }
 
 /* Blocks */
@@ -691,6 +726,11 @@ video {
 #exe-client-search-reset.visible {
     display: inline;
 }
+.exe-client-search-result{
+    padding:0;
+    background-color: #FFF3A0;
+    color: #1A1A1A;
+}
 
 /* Box toggler */
 .exe-export article.minimized .box-content{
@@ -710,4 +750,75 @@ video {
 /* Teacher mode */
 html:not(.mode-teacher) .js .teacher-only {
     display: none !important;
+}
+
+/* ========================================
+   Architecture v3.1 - Common Theme Overrides
+   ========================================
+   These rules support the new HTML structure and
+   load BEFORE theme-specific styles.
+   ======================================== */
+
+/* Navigation: Hide nested sections by default, show active paths */
+#siteNav .other-section {
+    display: none;
+}
+#siteNav li.active > .other-section,
+#siteNav li.current-page-parent > .other-section {
+    display: block;
+}
+
+/* Site footer extra section */
+#siteFooterExtra {
+    margin-bottom: 2em;
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Footer with neither license nor "Page footer" content: themes give #siteFooter
+   a background and border, so an empty one shows as a stray bar. Hidden here so
+   every theme (including custom ones) gets it, and so a theme that wants to keep
+   showing it can opt out by overriding display. */
+#siteFooter.siteFooter-empty {
+    display: none;
+}
+
+/* Skip navigation link */
+#skipNav {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95em;
+    text-decoration: underline;
+    padding: 0.5em 1em;
+    z-index: 1000;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    outline: 3px solid #fff;
+    outline-offset: -3px;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+#skipNav:focus {
+    top: 5px;
+}
+
+/* Print styles for header elements */
+@media print {
+    body #header,
+    body #emptyHeader,
+    body #nodeDecoration {
+        height: auto !important;
+        min-height: 0;
+        border: none;
+        padding: 0;
+    }
+    body #headerContent {
+        padding-top: 40px;
+    }
 }
